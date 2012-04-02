@@ -23,6 +23,9 @@ gem "eventmachine"
 # cool.io uses iobuffer that won't compile on JRuby
 # (and, probably, Windows)
 gem "cool.io", :platform => :ruby
+#gem "celluloid-io", :platform => :ruby_19
+gem 'celluloid', :git => 'git://github.com/celluloid/celluloid', :platform => :ruby_19
+gem 'celluloid-io', :git => 'git://github.com/celluloid/celluloid-io', :platform => :ruby_19
 gem "amq-protocol", :git => "git://github.com/ruby-amqp/amq-protocol.git", :branch => "master"
 
 group :development do
